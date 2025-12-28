@@ -138,5 +138,15 @@
 
 
 
+// =================================================================================
+
+// 2 kun 
+
+// Immutable : forEach()  length, at()  , indexOf(), lastIndexOf(), includes(),  slice(),
 
 
+
+// mutable :    map(), filter(), find(), findIndex(), findLastIndex(),
+//  sort(), every(), some(), flat(), flatMap(), fill(), copyWithin()
+// push(), pop(), unshift(), shift(), delete     splice();
+// split(), join(), reverse(), concat(),
