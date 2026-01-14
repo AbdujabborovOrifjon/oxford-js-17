@@ -9,11 +9,13 @@ let data = [
 
 // CREAT    ======================================
 
-// let creatdata = (ism, familiya, yosh)=>{
-//     data.push({id:data.length +1, ism, familiya, yosh})
-// }
+let creatdata = (ism, familiya, yosh)=>{
+    data.push({id:data.length +1, ism, familiya, yosh})
+}
 
-// creatdata("shohjahon", "gaybullayev", 17)
+creatdata("shohjahon", "gaybullayev", 17)
+creatdata("azizbek", "usmonov", 15)
+
 
 // console.log(data);
 
@@ -31,36 +33,44 @@ let data = [
 
 // Staticcc ==
 
-// let readaction = (prop)=>{
-//     data.sort((a, b)=>{
-//         if(prop === "ism") {
-//             return a.ism.localeCompare(b.ism)
-//         }else if (prop === "familiya") {
-//             return a.familiya.localeCompare(b.familiya)
+let readaction = (prop)=>{
+    data.sort((a, b)=>{
+        if(prop === "ism") {
+            return a.ism.localeCompare(b.ism)
+        }else if (prop === "familiya") {
+            return a.familiya.localeCompare(b.familiya)
 
-//         }else if (prop === "yosh") {
-//             return a.yosh - b.yosh
-//         }
-//     })
-// }
-// // readaction("ism")
-// // readaction("familiya")
+        }else if (prop === "yosh") {
+            return a.yosh - b.yosh
+        }
+    })
+}
+// readaction("ism")
+// readaction("familiya")
 // readaction("yosh")
 // console.log(data);
 
 // Dinamic ==
 
-let sortaction = (prop) => {
-    data.sort((a, b) => {
-        if (typeof a[prop] === "string") return a[prop].localeCompare(b[prop])
-        return a - b
-    })
-}
+// let sortaction = (prop) => {
+//     data.sort((a, b) => {
+//         if (typeof a[prop] === "string") return a[prop].localeCompare(b[prop])
+//         return a - b
+//     })
+// }
 // sortaction("ism")
-sortaction("familiya")
+// sortaction("familiya")
 // sortaction("yosh")
 
-console.log(data);
+// console.log(data);
 
 
 // UPDATE   
+
+
+// let update = (idedit, name)=>{
+//     data =  data.map((obj)=>obj.id === idedit && obj.ism = name)
+// }
+// update(3, "asadxon")
+// console.log(data);
+

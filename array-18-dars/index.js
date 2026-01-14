@@ -283,6 +283,86 @@
 
 
 
+// let  arr = [5, 7, 2,11, 33, 50, 10 ,99]
+// arr.sort((a,b)=>a - b)
+// console.log(arr);
+
+
+
+// ==========================================================================
+
+
+// let arr = [ 
+//     {
+//         id:1,
+//         name:"eshmat"
+//     },
+//     {
+//         id:2,
+//         name:"ALI"
+//     },
+//     {
+//         id:3,
+//         name:"vali"
+//     }
+// ]
+
+// let newarr = arr.filter((obj)=> obj.name.includes("m"))
+// console.log(newarr);
+
+
+
+// let arr = [ 
+//     {
+//         id:1,
+//         name:"eshmat",
+//         status:"student"
+//     },
+//     {
+//         id:2,
+//         name:"toshmat",
+//         status:"ishchi"
+
+//     },
+//     {
+//         id:3,
+//         name:"vali",
+//         status:"quruvchi"
+//     },
+//         {
+//         id:3,
+//         name:"salim",
+//         status:"quruvchi"
+//     },
+//         {
+//         id:3,
+//         name:"ali",
+//         status:"quruvchi"
+//     }
+// ]
+
+
+// arr.sort((a, b)=> {
+//     return a.name.localeCompare(b.name)
+// })
+// console.log(arr);
+
+
+// ============================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
