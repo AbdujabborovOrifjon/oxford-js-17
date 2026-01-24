@@ -177,19 +177,29 @@
 // =============================================
 
 // 2.
-let str = "A1g0r1t9m8";
-// String ichidagi raqamlarni oldingi o'ringa, harflarni esa oxirgi o'ringa o'tkazing.
+// let str = "A1g0r1t9m8";
+// // String ichidagi raqamlarni oldingi o'ringa, harflarni esa oxirgi o'ringa o'tkazing.
 
-let num = "";
-let harf = "";
+// let num = "";
+// let harf = "";
 
-for (const s of str) {
-    if (!isNaN(s) && s!== "") {
-         num += s
-    }else{
-        harf += s
-    }
-}
+// for (const s of str) {
+//     if (!isNaN(s) && s!== "") {
+//          num += s
+//     }else{
+//         harf += s
+//     }
+// }
 
-let javob = num + harf
-console.log(javob);
+// let javob = num + harf
+// console.log(javob);
+
+
+// ==============================================
+
+// 3.
+let str = "men algoritm markazida o‘qiyman";
+// matnning o'rtasidagi 1 ta kichik harfni katta xarfga almashtirib bering.
+
+let arr = str.replace("r", "R")
+console.log(arr);
