@@ -197,9 +197,12 @@
 
 // ==============================================
 
-// 3.
-let str = "men algoritm markazida o‘qiyman";
-// matnning o'rtasidagi 1 ta kichik harfni katta xarfga almashtirib bering.
+// // 3.
+// let str = "men algoritm markazida o‘qiyman";
+// // matnning o'rtasidagi 1 ta kichik harfni katta xarfga almashtirib bering.
 
-let arr = str.replace("r", "R")
-console.log(arr);
+// let arr = str.replace("r", "R")
+// console.log(arr);
+
+
+// ==========================================
