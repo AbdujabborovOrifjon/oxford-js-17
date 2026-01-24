@@ -153,3 +153,22 @@
 
 
 // ========================================================================================
+
+
+// 3 kunnnn 
+
+// / 1.
+let str = "Men Algoritm IT markazida tahsil olaman";
+// Berilgan matndan birinchi uchragan unli harf bilan oxirgi
+// uchragan undosh harf indexlari ayirmasini chiqaring.
+
+let undosh = "bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ"
+let unli = "aeiouAEIOU"
+let arr = str.split("")
+let unliharflar = arr.findIndex((w)=>unli.includes(w))
+let undoshharflar = arr.findLastIndex((h)=>undosh.includes(h))
+
+let javoblar =undoshharflar -  unliharflar 
+
+
+console.log(javoblar);
