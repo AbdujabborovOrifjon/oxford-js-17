@@ -32,5 +32,9 @@ let obj = {name:"ali", age:20}
 
 // console.log(obj);
 
-clone = Object.getOwnPropertyDescriptors(obj)
-console.log(clone);
+// clone = Object.getOwnPropertyDescriptors(obj)
+// console.log(clone);
+Object.defineProperty(obj, "name", {writable: false})
+   
+obj.name = "valii"
+console.log(obj);

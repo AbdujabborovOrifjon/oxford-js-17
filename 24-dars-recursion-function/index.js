@@ -14,3 +14,9 @@
 
 
 
+function re(num) {
+    if(num) return re(num + num2)
+        console.log(num);
+        
+}
+re(2)(3)
