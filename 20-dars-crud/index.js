@@ -76,21 +76,17 @@ let sortaction = (prop) => {
 // console.log(new Date().getTime());
 
 
-// let edit = (editid, editname)=>{
-//    data =  data.map((obj)=>obj.id === editid ? {...obj,ism : editname}: obj)
+let edit = (editid, editname)=>{
+   data =  data.map((obj)=>obj.id === editid ? {...obj,ism : editname}: obj)
    
-// }
-// edit(4, "salimboy")
+}
+edit(4, "salimboy")
 // console.log(data);
  
 
 
 let delet = (deleteid)=>{
-    data =data.filter((obj)=>{
-        if (obj.id !== deleteid) {
-            return obj
-        }
-    })
+    data =data.filter((obj)=>obj.id !== deleteid)
 }
-delete(2)
+delet(3)
 console.log(data);
