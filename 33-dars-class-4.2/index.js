@@ -62,27 +62,70 @@
 
 
 
-class Data{}
+// class Data{}
 
-class Per {
-    constructor(name, age){
-        this.name = name;
-        this.age = age
-    }
-}
-let obj = new Per("ali", 50)
+// class Per {
+//     constructor(name, age){
+//         this.name = name;
+//         this.age = age
+//     }
+// }
+// let obj = new Per("ali", 50)
 
-console.log(obj instanceof Data);
-console.log(obj instanceof Per);
+// console.log(obj instanceof Data);
+// console.log(obj instanceof Per);
 
 
-class Car {
-    static model = "BMW"
-    static getNAme () {
-        console.log("bu custom car class");
+// class Car {
+//     static model = "BMW"
+//     static getNAme () {
+//         console.log("bu custom car class");
         
+//     }
+// }
+
+// let obj1 = new Car()
+// console.log(obj1);
+
+
+
+// class Parent {
+//     static name = "ali"
+// }
+
+// console.log(Parent.name);
+
+
+
+class Parent {
+    constructor(name){
+        this.name = name
+    }
+    getparentname(){
+console.log(this.name);
+
     }
 }
 
-let obj1 = new Car()
-console.log(obj1);
+let obj = new Parent("ali")
+
+
+
+
+
+
+class Child extends Parent {
+    constructor(name){
+        super()
+        this.name = name
+    }
+    getchildname(){
+console.log(this.name);
+
+    }
+}
+
+let obj2 = new Child("toshmat")
+
+obj2.getparentname()
+obj2.getchildname()

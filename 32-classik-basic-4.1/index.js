@@ -70,20 +70,50 @@
 
 // — Computed named classes
 
-let name = "hii";
-let i = "name";
+// let name = "hii";
+// let i = "name";
 
-class parent {
-    constructor(ism) {
-        this[i] = ism;
+// class parent {
+//     constructor(ism) {
+//         this[i] = ism;
+//     }
+//     [name] (){
+//         console.log(this[i]);
+        
+//     }
+// }
+// let obj = new parent("ali")
+
+// obj.hii()
+
+// console.log(obj);
+
+
+
+
+
+// =========================================================
+
+
+class Person {
+    static
+    constructor(name, age){
+    this.name = name
+    this.age = name
+    console.log(name, age);
+    
     }
-    [name] (){
-        console.log(this[i]);
+    get(){
+        console.log("bu custom func");
         
     }
 }
-let obj = new parent("ali")
 
-obj.hii()
-
+let obj = new Person("ali", 50)
+obj.get()
 console.log(obj);
+
+
+
+// constractor bu class larni bulilding funcsiyasi
+// bulilding  bu - ozinikii
