@@ -53,33 +53,42 @@
 
 
 
-const Parent = (data) => class extends data {
-    getParentName() {
-        return "Parent"
-    }
-}
-const Parent2 = (data) => class extends data {
-    getParent2Name() {
-        return "Parent2"
-    }
-}
-const Child = (data) => class extends data {
-    getChildName() {
-        return "child"
-    }
+// const Parent = (data) => class extends data {
+//     getParentName() {
+//         return "Parent"
+//     }
+// }
+// const Parent2 = (data) => class extends data {
+//     getParent2Name() {
+//         return "Parent2"
+//     }
+// }
+// const Child = (data) => class extends data {
+//     getChildName() {
+//         return "child"
+//     }
+// }
+
+// class Boglovchi {}
+
+// class SubChild extends Parent(Child(Parent2(Boglovchi))) {
+//     getSubChildName() {
+//         return "Sub Child"
+//     }
+// }
+
+// let obj = new SubChild ();
+
+// console.log(obj.getParentName());
+// console.log(obj.getParent2Name());
+// console.log(obj.getChildName());
+// console.log(obj.getSubChildName());
+
+
+class parent {
+
 }
 
-class Boglovchi {}
+let obj = new parent()
 
-class SubChild extends Parent(Child(Parent2(Boglovchi))) {
-    getSubChildName() {
-        return "Sub Child"
-    }
-}
-
-let obj = new SubChild ();
-
-console.log(obj.getParentName());
-console.log(obj.getParent2Name());
-console.log(obj.getChildName());
-console.log(obj.getSubChildName());
+console.log(obj);
