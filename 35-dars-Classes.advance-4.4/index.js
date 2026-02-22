@@ -85,10 +85,27 @@
 // console.log(obj.getSubChildName());
 
 
-class parent {
+// class parent {
 
+// }
+
+// let obj = new parent()
+
+// console.log(obj);
+
+
+
+class Person {
+  speak() {
+    console.log("Men gapiryapman");
+  }
 }
 
-let obj = new parent()
+class Teacher extends Person {
+  speak() {
+    console.log("Men dars tushuntiryapman 📚");
+  }
+}
 
-console.log(obj);
+const t = new Teacher();
+t.speak();
