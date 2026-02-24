@@ -25,10 +25,21 @@
 //   console.log(data);
 
 
- function getmul() {
-    return 100 * 3
+//  function getmul() {
+//     return 100 * 3
+// }
+
+// let data = 2027;
+
+// export{getmul, data}
+
+function* get() {
+let i = 1;
+while (true) {
+    yield i;
+    i++
+}
 }
 
-let data = 2027;
-
-export{getmul, data}
+let obj = get();
+console.log(obj.next());
