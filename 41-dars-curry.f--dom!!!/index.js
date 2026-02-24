@@ -30,5 +30,7 @@
 
 // Vapshe qisqartma dinamik usulii 
 
-let getsum = (a)=> (b)=> (b ? getsum(a+b):a)
-console.log(getsum(1)(2)(3)(4)(5)(6)(8)(9)(10)());
+// let getsum = (a)=> (b)=> (b ? getsum(a+b):a)
+// console.log(getsum(1)(2)(3)(4)(5)(6)(8)(9)(10)());
+
+
