@@ -34,3 +34,5 @@ let h1 = document.createElement("h1")
 h1.textContent = "oxford"
 console.log(h1);
 box.appendChild(h1)
+
+console.log("salom dunyo ");

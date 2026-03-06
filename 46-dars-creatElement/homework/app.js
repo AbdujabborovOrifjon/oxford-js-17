@@ -1,15 +1,17 @@
 let body = document.querySelector("body")
-body.style.backgroundColor = "black";
+// body.style.backgroundColor = "black";
 // body.style.display = "flex";
 // body.style.justifyContent = "center";
 // body.style.alignItems = "center";
 // body.style.height = "100vh";  
 
+
+
 let = cont = document.createElement("div")
 cont.style.cssText = `
  width:1200px;
  height:709px;
- border:1px solid white;
+ border:1px solid black;
 margin: 0 auto;
 background-Color: white;
 `
@@ -66,7 +68,9 @@ let card = document.createElement("div")
 card.style.cssText = `
  width:300px;
  height:330px;
- border:1px solid black;
+
+ border:1px solid gray;
+
 border-radius:10px;
 
 `
@@ -87,11 +91,11 @@ padding :4px 15px;
 card.append(c1)
 
 let p = document.createElement("p")
-p.textContent = "Lorem ipsum, dolor sit amet consectetur  elit. ver itaque tenetur temporibus quo aliquam velit nostrum obcaecati! Tenetur, eos."
+p.textContent = "Lorem ipsum, dolor sit amet consectetur  elit. ver itaque tenetur  quo aliquam velit nostrum obcaecati! Tenetur, eos."
 p.style.cssText = `
 color: black;
 font-family: sans-serif;
-padding:0px 15px;
+padding:0px 7px;
 position:absolute;
 width:300px;
 top:400px;
@@ -118,8 +122,9 @@ card2.style.cssText = `
  width:300px;
  height:320px;
 border-radius:10px;
+ border:1px solid gray;
  
- border:1px solid black;
+
 `
 box.append(card2)
 
@@ -140,11 +145,11 @@ padding :4px 15px;
 card2.append(c2)
 
 let pi = document.createElement("p")
-pi.textContent = "Lorem ipsum, dolor sit amet consectetur  elit. ver itaque tenetur temporibus quo aliquam velit nostrum obcaecati! Tenetur, eos."
+pi.textContent = "Lorem ipsum, dolor sit amet consectetur  elit. ver itaque tenetur  quo aliquam velit nostrum obcaecati! Tenetur, eos."
 pi.style.cssText = `
 color: black;
 font-family: sans-serif;
-padding:0px 15px;
+padding:0px 7px;
 position:absolute;
 width:300px;
 top:400px;
@@ -173,7 +178,7 @@ let card3 = document.createElement("div")
 card3.style.cssText = `
  width:300px;
  height:320px;
- border:1px solid black;
+ border:1px solid gray;
 border-radius:10px;
 
 `
@@ -197,11 +202,11 @@ card3.append(c3)
 
 
 let pin = document.createElement("pin")
-pin.textContent = "Lorem ipsum, dolor sit amet consectetur  elit. ver itaque tenetur temporibus quo aliquam velit nostrum obcaecati! Tenetur, eos."
+pin.textContent = "Lorem ipsum, dolor sit amet consectetur  elit. ver itaque tenetur   quo aliquam velit nostrum obcaecati! Tenetur, eos."
 pin.style.cssText = `
 color: black;
 font-family: sans-serif;
-padding:0px 15px;
+padding:0px 7px;
 position:absolute;
 width:300px;
 top:420px;
@@ -220,6 +225,45 @@ background-color: #000000d2;
 border:none;
 border-radius:5px;
 color:white;
-margin-top: px;
+margin-top:65px;
 `
 card3.append(btn3)
+console.log("Card");
+
+
+// ==================================================
+
+
+let bottom = document.createElement("button")
+bottom.textContent = "light"
+bottom.style.backgroundColor = "black"
+bottom.style.color = "white"
+bottom.style.cssText = `
+width:100px;
+height:30px;
+background-color: white;
+color:black;
+position:absolute;
+top:50px;
+border:2px solid black;
+margin-left:25px;
+`
+body.classList.add("light")
+bottom.addEventListener("click", function () {
+    body.classList.toggle("dark")
+    bottom.style.cssText = `
+    width:100px;
+    height:30px;
+    background-color: black;
+    color:white;
+    position:absolute;
+    top:50px;
+    border:2px solid white;
+    margin-left:25px;
+    `;
+
+    h1.classList.toggle("light")
+    
+})
+
+body.appendChild(bottom)
