@@ -267,3 +267,5 @@ bottom.addEventListener("click", function () {
 })
 
 body.appendChild(bottom)
+
+console.log("javascript and css and html and react ");

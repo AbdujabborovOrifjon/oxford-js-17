@@ -23,4 +23,4 @@ cont.classList.replace("active", "active2")
 
 console.log("hello world");
 
-alert("salom")
+alert("hello world")
