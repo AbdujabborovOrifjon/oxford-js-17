@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: #333;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    color: white;
+}
+
+.calculator{
+    width: 350px;
+    height: 600px;  
+    border-radius: 20px;
+    background-color: black;
+    padding: 35px 15px 20px 15px;
+}
+
+.calculator h1{
+    color: white;
+    text-align: center;
+}
+
+
+.calculator input{
+    width: 100%;
+    height: 70px;
+    background-color: #333;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 20px 15px;
+    color: white;
+    font-size: 26px;
+    text-align: right;
+    margin: 25px 0 20px 0;
+}
+
+.calculator .btns{
+    height:74% ;
+    /* border: 2px solid red; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 40px;
+    
+}
+
+.calculator button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    background-color: gray;
+    font-size: 30px;
+}
+
+.calculator .btns button{
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    background-color: #333;
+    color: white;
+}
+
+ .calculator .btns .zero {
+    grid-column: 1/3;
+    border-radius: 35px;
+}
+
+.contenir .btns button:first-child{
+    background-color: #a7a5a7;
+}
+
+.contenir .btns button:nth-child(4n){
+    background-color: #ff9501}
+
+
+.calculator .btns .teng{
+    background-color: #ff9501;
+}
